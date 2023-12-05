@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi ngân hàng</title>
+</head>
+<script>
+   var tiengui, thang, laisuat; 
+   tiengui = prompt(" Nhập số tiền cần gửi");
+   thang = prompt("Nhập số tháng gửi");
+   laisuat = prompt("Nhập lãi suất");
+   
+   //  Đổi về kiểu dữ liệu dạng số
+    var tienguiN = parseInt(tiengui);
+    var thangN = parseInt(thang);
+    var laisuatN = parseFloat(laisuat);
+    
+    // Tính toán
+    var tienlaisau = tienguiN * thangN * laisuatN /12;
+    var tongtienlai = tienguiN + tienlaisau;
+
+    
+    // Cho ra kết quả
+    document.write("Tiền gửi:" + tiengui+ "VNĐ <br>")
+    document.write("Tháng:" + thang+ "Tháng <br>" )
+    document.write("Lãi suất:" + laisuat+ "% <br>"  )
+    document.write("Tiền lãi sau:" + tienlaisau+ "VNĐ <br>")
+    document.write("Tổng tiền lãi:" +tongtienlai+ "VNĐ <br>")
+</script>
+
+
+<body>
+  
+</body>
+</html>
